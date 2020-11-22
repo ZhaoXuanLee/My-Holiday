@@ -1,0 +1,153 @@
+body {
+  margin: 0%;
+  background-color: #edf1fc;
+}
+
+/*Module*/
+.section_divider {
+  background-position: 0% 60%;
+  height: 500px;
+  background-size: cover;
+  opacity: 0.85;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txt {
+  background-color: #bbbfca;
+  color: #182b53;
+  padding: 10px;
+  font-family: cursive;
+  letter-spacing: 3px;
+  font-size: 30px;
+  text-align: center;
+  opacity: 100%;
+}
+
+.content {
+  margin: 4% 10%;
+}
+
+.flex-container {
+  display: flex;
+  padding: 0 4px;
+  flex-wrap: wrap;
+}
+
+/*Flow*/
+h1,
+h2 {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 2px;
+}
+
+p,
+ul,
+ol {
+  font-size: large;
+  font-family: cursive;
+}
+
+ol {
+  padding: 0%;
+}
+
+img {
+  width: 100%;
+}
+
+/*top-content*/
+.p-pic-1 {
+  flex-basis: 30%;
+}
+.p-pic-2 {
+  flex-basis: 20%;
+  margin-left: 5px;
+}
+.description {
+  flex-basis: 40%;
+  align-self: center;
+  margin-left: 3%;
+}
+
+/*mid-content*/
+.my-list {
+  flex-basis: 58%;
+  align-self: center;
+  margin-left: 3%;
+}
+.beside-list {
+  flex-basis: 35%;
+}
+
+/*btm content*/
+.column {
+  flex-basis: 25%;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+/*footer*/
+.footer {
+  background-color: #d0dcee;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+.button {
+  background-color: #acb2c0;
+  color: black;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 12px;
+  margin: 0 10px;
+  font-family: cursive;
+}
+
+/*Images*/
+.top_img {
+  background-image: url("Images/background\ img\ 1.jpeg");
+}
+.mid_img {
+  background-image: url("Images/background\ img\ 2.jfif");
+}
+.btm_img {
+  background-image: url("Images/bg\ img\ 3.jpg");
+}
+
+/*Media Query*/
+/*tablets*/
+@media (max-width: 800px) {
+  /*top-content*/
+  .p-pic {
+    flex-basis: 100%;
+  }
+  .description {
+    flex-basis: 100%;
+  }
+
+  /*mid-content*/
+  .my-list {
+    flex-basis: 100%;
+  }
+  .beside-list {
+    flex-basis: 100%;
+  }
+
+  /*btm content*/
+  .column {
+    flex-basis: 50%;
+    box-sizing: border-box;
+  }
+}
+
+/*phone*/
+@media (max-width: 600px) {
+  .column {
+    flex-basis: 100%;
+  }
+}
